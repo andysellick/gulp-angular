@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="seoangular">
+<head>
+<!--[if lt IE 9]>
+<script src="static/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+<![endif]-->
+
+    <title data-ng-bind="ngMeta.title">Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0">
+	<base href="/">
+
+	<link rel="canonical" href="https://fixme" />
+	<meta name="description" content="{{ngMeta.description}}" />
+	<meta property="og:title" content="fixme" />
+	<meta property="og:site_name" content="fixme" />
+	<meta property="og:description" content="fixme" />
+	<meta property="articlepublisher" content="https://www.facebook.com/fixme" />
+	<meta property="og:url" content="https://fixme" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://fixme.jpg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@fixme" />
+	<meta name="twitter:title" content="fixme" />
+	<meta name="twitter:description" content="fixme" />
+	<meta name="twitter:url" content="http://fixme" />
+	<meta name="twitter:image" content="http://fixme.jpg" />
+    <link rel="shortcut icon" href="/static/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"/>
+	<!-- FIXME insert google analytics here -->
+</head>
+
+<body>
+    <div class="container">
+		{{ message }}
+		
+		<p>
+			<a href="/">Home</a>
+			<a href="/test">Test</a>
+			<a href="/notalink">Not valid</a>
+		</p>
+		
+		<div data-ng-view></div>
+    </div>
+
+    <script src="/static/bower_components/angular/angular.min.js"></script>
+    <script src="/static/bower_components/angular-route/angular-route.min.js"></script>
+    <script src="/static/bower_components/ngMeta/dist/ngMeta.min.js"></script>
+	
+    <!--[if lt IE 9 ]> 
+    <script>(function() {$('body').addClass('iex');})();</script>
+    <![endif]-->
+    <script src="/static/js/main.min.js"></script>
+
+</body>
+</html>
