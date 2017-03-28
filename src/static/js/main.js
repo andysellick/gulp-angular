@@ -27,7 +27,8 @@ seoangular.config(function($routeProvider, $locationProvider, ngMetaProvider){
 			}
 		})
 		.otherwise({
-			redirectTo:'/'
+			//redirectTo:'/'
+			templateUrl:'pages_404.html'
 		});
 	// use the HTML5 History API
 	$locationProvider.html5Mode(true);
